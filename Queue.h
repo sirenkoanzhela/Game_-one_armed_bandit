@@ -7,14 +7,14 @@ class Queue
 private:
 	Template_vector<T> data;
 public:
-	// Очистка очереди
+	
 	void Clear() { data.Clear(); }
 
-	// Работа с размером очереди
+	
 	int GetCount() const { return data.GetSize(); }
 	bool IsEmpty() const { return data.isEmpty(); }
 
-	// Добавление и удаление элементов
+	
 	void Add(const T& item);
 	void Remove(T& item);
 	void Peek(T& item);
